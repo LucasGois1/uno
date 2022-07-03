@@ -1,7 +1,7 @@
 import { ThrowACardEvent } from "../events/ThrowACardEvent";
 import { Hand } from "../Hand";
 import { Producer } from "../tools/patterns/Producer";
-import { Color, Symbol } from "./caracteristcs";
+import { Color, Symbol } from "./characteristics";
 import { Event } from "../events";
 import { TrollEvent } from "../events/TrollEvent";
 

@@ -1,5 +1,5 @@
 import { Card } from "./cards/Card";
-import { Color } from "./cards/caracteristcs";
+import { Color } from "./cards/characteristics";
 import { Stack } from "./tools/structs/Stack";
 import { Hand } from "./Hand";
 import { Queue } from "./tools/structs/Queue";
