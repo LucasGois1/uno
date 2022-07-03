@@ -1,7 +1,7 @@
 export class Event<T> {
     constructor(
         private readonly name: string,
-        private readonly argument: any
+        private readonly argument: T
     ) {}
 
     getName(): string {
