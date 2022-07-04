@@ -4,8 +4,8 @@ import { ThrowACardEvent } from "../ThrowACardEvent";
 import { PlayerHandler } from "./PlayerHandler";
 
 export class ThrowACardHandler implements PlayerHandler<ThrowACardEvent> {
-  private player: Player;
-  private board: Board;
+  private player!: Player;
+  private board!: Board;
 
   setPlayer(player: Player): void {
     this.player = player;

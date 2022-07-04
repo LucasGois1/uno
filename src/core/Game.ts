@@ -4,11 +4,7 @@ import { Player } from "./Player";
 import { HandMediator } from "./HandMediator";
 
 export class Game {
-  constructor(
-    private players: Player[],
-    private board: Board,
-    private mediator: Mediator<Card>
-  ) {
+  constructor(private players: Player[], private board: Board) {
     this.newGame();
   }
 
@@ -21,19 +17,18 @@ export class Game {
     ];
 
     this.board = new Board(allCards);
-    this.mediator = new HandMediator();
     this.players = [
-      new Player("Player 1"),
-      new Player("Player 2"),
-      new Player("Player 3"),
-      new Player("Player 4"),
+      // new Player("Player 1"),
+      // new Player("Player 2"),
+      // new Player("Player 3"),
+      // new Player("Player 4"),
     ];
   }
 
   init(): void {
-    this.players.forEach((player) => {
-      player.giveMyCards(this.mediator.notify());
-    });
+    // this.players.forEach((player) => {
+    //   player.giveMyCards(this.mediator.notify());
+    // });
   }
 
   getNumbers(): number[] {

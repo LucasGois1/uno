@@ -3,7 +3,7 @@ import { PlayerHandler } from "./events/handlers/PlayerHandler";
 import { EventDispatcher } from "./events/protocols/EventDispatcher";
 import { Player } from "./Player";
 
-export class Hand extends EventDispatcher<PlayerHandler> {
+export class Hand extends EventDispatcher<PlayerHandler<Event<any>>> {
   constructor(private readonly player: Player) {
     super();
   }
